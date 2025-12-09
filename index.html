@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>你的名字 | Research & Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="个人科研主页、笔记和兴趣记录。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- 顶部导航 -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="#top">你的名字</a>
+          <span class="logo-tagline">Research · Notes · Interests</span>
+        </div>
+        <nav class="site-nav">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#notes">Notes</a>
+          <a href="#interests">Interests</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero / 开场区域 -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <p class="hero-kicker">Hi, I’m</p>
+            <h1>你的名字</h1>
+            <p class="hero-subtitle">
+              一句话介绍你自己（例如：计算生物学 / 动物遗传学 / 发育生物学
+              方向的学生 / 研究者）。
+            </p>
+
+            <p class="hero-text">
+              这里可以写一段两三句话的简介：目前在哪个学校 / 课题组，大致研究兴趣
+              是什么（例如：遗传负荷、群体遗传、家禽育种、小鼠性别分化等），以及
+              你平时还在做些什么。
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#research" class="btn primary">查看科研项目</a>
+              <a href="#notes" class="btn secondary">浏览科研笔记</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About / 关于我</h2>
+          <div class="grid two-columns">
+            <div>
+              <p>
+                在这里写一段更完整的自我介绍。可以包括：
+              </p>
+              <ul>
+                <li>目前的身份（硕士 / 博士 / 博后 / 科研工作者等）</li>
+                <li>所在学校 / 研究机构</li>
+                <li>主要研究领域和方法（比如：群体遗传学、变异注释、显微成像）</li>
+                <li>长期科研兴趣或者想解决的科研问题</li>
+              </ul>
+            </div>
+            <div class="about-highlight">
+              <h3>Research Keywords</h3>
+              <ul class="tag-list">
+                <li>Genetics</li>
+                <li>Genomic Load</li>
+                <li>Population Genomics</li>
+                <li>Developmental Biology</li>
+                <li>Chicken / Mouse Models</li>
+              </ul>
+              <p class="muted">
+                你可以把这些关键词改成更贴合自己的，例如具体物种、具体方法、
+                常用工具等。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section id="research" class="section section-alt">
+        <div class="container">
+          <h2>Research / 科研项目</h2>
+          <p class="section-intro">
+            这里简单列出你现在或过去做过的核心项目。每个项目一张卡片，写清楚
+            问题、方法和你做了什么。
+          </p>
+
+          <div class="grid three-columns">
+            <!-- 项目 1 -->
+            <article class="card">
+              <h3>项目标题示例一</h3>
+              <p class="muted small">起止时间 · 所在实验室 / 合作方</p>
+              <p>
+                一两句话总结项目研究的问题，比如：比较不同群体之间的遗传负荷差异，
+                探索选择和近交对基因组的影响。
+              </p>
+              <ul class="bullet-list">
+                <li>使用到的数据类型（全基因组测序 / RNA-seq 等）</li>
+                <li>主要分析方法（例如：ROH、F<sub>ST</sub>、选择扫描等）</li>
+                <li>你的具体贡献（分析管线搭建 / 可视化 / 实验设计等）</li>
+              </ul>
+            </article>
+
+            <!-- 项目 2 -->
+            <article class="card">
+              <h3>项目标题示例二</h3>
+              <p class="muted small">起止时间 · 所在实验室 / 合作方</p>
+              <p>
+                这里写第二个项目，可以是完全不同的方向，比如小鼠生殖发育、
+                免疫染色、qPCR 分析等。
+              </p>
+              <ul class="bullet-list">
+                <li>关键问题 / 假说</li>
+                <li>实验或计算方法</li>
+                <li>目前进展 / 重要发现（可以写“进行中”）</li>
+              </ul>
+            </article>
+
+            <!-- 项目 3 -->
+            <article class="card">
+              <h3>未来想做的方向</h3>
+              <p class="muted small">一些 long-term ideas</p>
+              <p>
+                写一些你未来想深入的方向，比如：稀有变异、结构变异功能预测、
+                多模态数据整合、或者特定疾病 / 性状的遗传基础。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notes / 科研笔记 -->
+      <section id="notes" class="section">
+        <div class="container">
+          <h2>Notes / 科研笔记</h2>
+          <p class="section-intro">
+            这里可以当作一个“公开实验记录本”：记录你踩过的坑、分析流程、工具使用心得。
+            先用静态列表，后期如果想折腾可以再改成真正的博客系统。
+          </p>
+
+          <div class="notes-list">
+            <article class="note-item">
+              <h3>示例：某个分析流程的记录标题</h3>
+              <p class="muted small">2025-12-09 · 方法 / 工具 · 笔记</p>
+              <p>
+                简要说明这篇笔记在讲什么，比如：某个软件的参数优化心得、
+                某个 pipeline 的踩坑记录，或者一篇论文的阅读笔记。
+              </p>
+              <p class="muted">
+                真正写的时候可以放链接，指向 GitHub 的 README、PDF、或
+                future blog 页面。
+              </p>
+            </article>
+
+            <article class="note-item">
+              <h3>示例：文献阅读笔记</h3>
+              <p class="muted small">Paper Note</p>
+              <p>
+                可以用来归档你觉得重要的几篇文献：研究问题、方法、结论以及你
+                自己的批判性看法。
+              </p>
+            </article>
+
+            <article class="note-item">
+              <h3>示例：实验 protocol / troubleshooting</h3>
+              <p class="muted small">Wet-lab</p>
+              <p>
+                比如冻切 / IF / qPCR 的优化笔记，自己实验室版本的 SOP 小结。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interests / 兴趣爱好 -->
+      <section id="interests" class="section section-alt">
+        <div class="container">
+          <h2>Interests / 兴趣</h2>
+          <p class="section-intro">
+            人不是只有科研，可以在这里写你真正在意、经常投入时间的兴趣。
+          </p>
+
+          <div class="grid three-columns">
+            <article class="card">
+              <h3>Books & Films / 书与电影</h3>
+              <p>
+                写你常看的类型（比如：科幻、心理学、哲学、作者名字等），可以顺便列几部
+                反复回看的作品。
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Games / 游戏 & 桌游</h3>
+              <p>
+                写你常玩的桌游 / 游戏，以及它们吸引你的点（策略性、叙事、恶趣味等等）。
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Other Things</h3>
+              <p>
+                比如调酒、旅行、语言学习、塔罗 / 绘画等 —— 总之是你愿意被别人看到的那部分
+                生活。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact / 联系方式</h2>
+          <p class="section-intro">
+            放你愿意公开的联系方式，科研相关的话一般是邮箱 + GitHub / ORCID / Google Scholar。
+          </p>
+
+          <div class="contact-block">
+            <ul>
+              <li><strong>Email：</strong>your.name [at] example.com</li>
+              <li><strong>GitHub：</strong><a href="https://github.com/你的用户名" target="_blank" rel="noopener noreferrer">github.com/你的用户名</a></li>
+              <!-- 如有需要再加：
+              <li><strong>Google Scholar：</strong>链接</li>
+              <li><strong>ORCID：</strong>链接</li>
+              -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> 你的名字 · Built with GitHub Pages.</p>
+      </div>
+
+      <script>
+        // 自动显示当前年份
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>
